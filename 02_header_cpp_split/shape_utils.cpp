@@ -9,14 +9,19 @@
 // the linker tries to combine object files and finds two bodies for
 // one name.
 
-#include "shape_utils.h"   // pull in the promises we're about to keep
+//
+// Created by asher on 9/3/2026.
+//
 
-double circleArea(double radius) {
-    // TODO: return the area of a circle with this radius (pi * radius * radius)
+#include "shape_utils.h"
+
+#include <math.h>
+
+double circle_area(double r) {
+    return 3.1415926535 * r * r;
 }
-
-double rectangleArea(double width, double height) {
-    // TODO: return width times height
+double rectangle_area(double h, double w) {
+    return h * w;
 }
 
 // Notice: this file has ZERO knowledge of who calls these functions.
