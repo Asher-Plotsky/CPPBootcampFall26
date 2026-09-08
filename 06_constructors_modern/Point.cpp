@@ -1,18 +1,18 @@
 #include "Point.h"
 
-Point::Point() {
+Point::Point() : Point(0.0, 0.0) {
     // TODO: this constructor should delegate to Point(0.0, 0.0) instead
     // of having a body at all. Rewrite the line above to read:
     //   Point::Point() : Point(0.0, 0.0) {
 }
 
-Point::Point(double x, double y) {
+Point::Point(double x, double y) : x_(x), y_(y) {
     // TODO: use a member initializer list instead of a body here.
     // Rewrite the line above to read:
     //   Point::Point(double x, double y) : x_(x), y_(y) {
 }
 
-Point::Point(double xy) {
+Point::Point(double xy) : Point(xy, xy) {
     // TODO: delegate to the two-argument constructor with both
     // coordinates set to xy. Rewrite the line above to read:
     //   Point::Point(double xy) : Point(xy, xy) {
