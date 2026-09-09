@@ -6,7 +6,7 @@
 // Duck TWO separate Animal subobjects -- the diamond problem. Add ONE
 // keyword between "public" and "Animal" below to make Swimmer and
 // Runner share a single Animal subobject instead.
-class Swimmer : public Animal {
+class Swimmer : public virtual Animal {
 public:
     explicit Swimmer(std::string name);
     void swim() const;

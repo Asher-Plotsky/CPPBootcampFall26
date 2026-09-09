@@ -1,7 +1,7 @@
 #include "Animal.h"
 #include <utility>
 
-Animal::Animal(std::string name) {
+Animal::Animal(std::string name) : name_(std::move(name)) {
     // TODO: initialize name_ from the parameter using a member
     // initializer list instead of this body. Rewrite the line above to
     // read:
