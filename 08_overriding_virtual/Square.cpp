@@ -1,6 +1,6 @@
 #include "Square.h"
 
-Square::Square(double side) {
+Square::Square(double side) : side_(side) {
     // TODO: initialize side_ from the parameter using a member
     // initializer list. Rewrite the line above to read:
     //   Square::Square(double side) : side_(side) {
@@ -8,8 +8,10 @@ Square::Square(double side) {
 
 double Square::area() const {
     // TODO: return side_ * side_
+    return side_ * side_;
 }
 
 std::string Square::name() const {
     // TODO: return "Square"
+    return "Square";
 }
