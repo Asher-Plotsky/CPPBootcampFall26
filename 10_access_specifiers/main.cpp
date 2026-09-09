@@ -10,7 +10,7 @@ int main() {
     checking.withdraw(30.0);
     std::cout << "Checking balance: " << checking.balance() << std::endl;
 
-    // checking.balance_ = 1000000.0;   // <-- should NOT compile, no
+    //checking.balance_ = 1000000.0;   // <-- should NOT compile, no
     // matter which access specifier you pick for balance_ in
     // BankAccount.h. Try uncommenting this once you've filled in that
     // TODO, to prove outside code never gets in, whether balance_ ends

@@ -9,4 +9,5 @@ void SavingsAccount::applyMonthlyInterest() {
     // balance_ lets a derived class reach it. If you see a "balance_ is
     // private/protected within this context" error, that's this task's
     // other TODO waiting to be fixed.
+    balance_ *= interestRate_;
 }
