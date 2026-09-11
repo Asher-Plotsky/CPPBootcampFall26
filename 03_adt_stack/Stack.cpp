@@ -10,30 +10,35 @@
 
 void Stack::push(int value) {
     // TODO: add value to the top of data_ (vector has a method for this)
-    data_.push_back(value);
+
 }
 
-void Stack::pop() {
+int Stack::pop() {
     // TODO: if data_ isn't empty, remove the top element
-    if (!data_.empty())
+    if ()
     {
-        data_.pop_back();
+
     }
 }
 
-int Stack::top() const {
+int Stack::peek() const {
     // TODO: return the top element of data_
     // undefined if empty -- callers should check isEmpty() first. We'll
     // harden this kind of thing later in the course.
-    return data_.back();
+
 }
 
 bool Stack::isEmpty() const {
     // TODO: return whether data_ has zero elements
-    return data_.empty();
+
+}
+
+bool Stack::isFull() const{
+    // TODO: return whether data_ has maximum elements
+    
 }
 
 int Stack::size() const {
     // TODO: return how many elements are in data_ (cast to int)
-    return int(data_.size());
+    return sizeof(data)/sizeof(data[0]);
 }
