@@ -1,10 +1,12 @@
 ##Reflection Questions:
 
-1: 
+1: topIndex holds the value 0 after creation. This makes the method
+isEmpty() return true because there are no values stored in the array.
 
-2:
+2: When one value is pushed into the first slot of the array, the value of topIndex
+increases. If the order was swapped the values would not be in the correct index of the array.
 
-3:
+3: 
 
 4:
 
